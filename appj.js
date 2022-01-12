@@ -131,10 +131,7 @@ function removeItemFromCart(id){
     updateCart();
 
      
- }
 
-app.get('/product:id', (req, res) => {
-    res.sendFile(path.join(staticPath, "cart.html"))
 
 })
 
