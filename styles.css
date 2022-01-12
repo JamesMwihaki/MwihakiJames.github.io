@@ -479,46 +479,4 @@ img{
 .total-items-in-cart{
     margin-left: 10px;
 }
-
-
-
-/*contact form*/
-main{
-    width: 250px;
-    background-color: blue;
-    position: relative;
-    margin-top: 50px;
-    margin-left: 200px;
-  }
-  
-  p{
-    color: #fff;
-    margin-left: 70px;
-  }
-  
-  form{
-    display: grid;
-    margin: 5px;
-  }
-  
-  input{
-    height: 30px;
-    margin: 5px; 
-  }
-  
-  button{
-    width: 120px;
-    margin-left: 60px;
-    margin-top: 50px;
-  
-  }
-  
-  textarea{
-    height: 100px;
-    margin: 5px;
-  }
-  
-  
-  
-  
-    
+   
