@@ -11,36 +11,39 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&family=The+Nautigal&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <body >
     <div class="header">
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <h1>Sato</h1>
+                    <h1>Store Name</h1>
                 </div>
                 <nav>
                     <ul id="MenuItems">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="page.html">Products</a></li>
                         <li><a href="">about</a></li>
-                        <li><a href="index.php">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                         <li><a href="">sign up</a></li>
                     </ul>
+                    
                 </nav>
-                    <a href="cart.html" i class="fa fa-shopping-cart" ></a> 
+                <div id="close"  class="fa fa-shopping-cart" onclick="openCart('cat__container')" >
                     <div class="total-items-in-cart">
                         0 
-                    </div> 
+                    </div>
+                 </div>
                 <img src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png" class="menu-icon" onclick="menutoggle()"> 
             </div>
             <div class="row">
                 <div class="second__col">
                     <h1>Make every moment<br> COUNT!</h1>
-                    <p>Be the smile you see on their faces. Be everything they wish you were!</p>
-                    <a href="/" class="btn">Explore Now &#9758;</a>
+                    <p>“It is only through the eyes of others that our lives have any meaning.”</p>
+                    <a href="explore.html" class="btn">Explore Now &#9758;</a>
                     </div>
                 <div class="second__col">
-                    <img src="images/fashion6.svg">
+                    <img src="images/anime1.jpg">
                     
                     </div>
                 </div>
@@ -48,18 +51,14 @@
         </div>
     </div>
 
+   
+
     <!--Featured cartegories-->
     <div class="categories"> 
         <div class="small__container">
             <div class="row">
                 <div class="col3">
-                    <img src="images/product1.jpg">
-                </div>
-                <div class="col3">
-                    <img src="images/product2.jpg">
-                </div>
-                <div class="col3">
-                    <img src="images/product3.jpg">
+                    <img src="images/anime2.jpg">
                 </div>
             </div>
         </div>   
@@ -68,159 +67,30 @@
 
 
     <!--Featured products-->
-    <div class="small__container">
-        <h2 class="title">Featured products</h2>
+    <div class="featured__container">
+        <h2 class="title">The Hype</h2>
         <div class="row">   
             <div class="col4">
                 <img src="images/pic17.jpg">
-                <h4>Red printed T-shirt</h4>
-                <div class="rating">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>50.00</p>
             </div>
             <div class="col4">
-                <img src="images/pic18.jpg">
-                <h4>Red printed T-shirt</h4>
-                <div class="rating">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>50.00</p>
-            </div>
-            <div class="col4">
-                <img src="images/pic19.jpg">
-                <h4>Red printed T-shirt</h4>
-                <div class="rating">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>50.00</p>
-            </div>
-            <div class="col4">
-                <img src="images/pic21.jpg">
-                <h4>Red printed T-shirt</h4>
-                <div class="rating">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>50.00</p>
+                <img src="images/pic17.jpg">
             </div>
         </div>
+    </div> 
 
+    <div class="latest__items">
         <h2 class="title">Latest products</h2>
         <div class="row">   
-            <div class="col4">
+            <div class="latest__col">
                 <img src="images/pic1.jpg">
-                <h4>Red printed T-shirt</h4>
-                <div class="rating">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>50.00</p>
             </div>
-            <div class="col4">
-                <img src="images/pic2.jpg">
-                <h4>Red printed T-shirt</h4>
-                <div class="rating">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>50.00</p>
-            </div>
-            <div class="col4">
-                <img src="images/pic3.jpg">
-                <h4>Red printed T-shirt</h4>
-                <div class="rating">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>50.00</p>
-            </div>
-            <div class="col4">
-                <img src="images/pic4.jpg">
-                <h4>Red printed T-shirt</h4>
-                <div class="rating">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>50.00</p>
-            </div>
-        </div>
-        <div class="row">   
-            <div class="col4">
-                <img src="images/pic5.jpg">
-                <h4>Red printed T-shirt</h4>
-                <div class="rating">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>50.00</p>
-            </div>
-            <div class="col4">
-                <img src="images/pic6.jpg">
-                <h4>Red printed T-shirt</h4>
-                <div class="rating">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>50.00</p>
-            </div>
-            <div class="col4">
-                <img src="images/pic7.jpg">
-                <h4>Red printed T-shirt</h4>
-                <div class="rating">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>50.00</p>
-            </div>
-            <div class="col4">
-                <img src="images/pic8.jpg">
-                <h4>Red printed T-shirt</h4>
-                <div class="rating">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>50.00</p>
-            </div>
+            <div class="latest__col">
+                <img src="images/pic1.jpg">
+            </div> 
+            <div class="latest__col">
+                <img src="images/pic1.jpg">
+            </div> 
         </div>
 
     </div>
@@ -248,7 +118,7 @@
     
     <!--Testmonials-->
     <div class="testmonials">
-        <div class="small__container">
+        <div class="testmonials__container">
             <div class="row">
                 <div class="col-o">
                     <i class="fa fa-quote-left"></i>
@@ -295,7 +165,7 @@
 
     <!--Brands-->
     <div class="brands">
-        <div class="small__container">
+        <div class="brands__container">
             <div class="row">
                 <div class="col5">
                     <img src="images/nike.jpg" >
@@ -363,14 +233,16 @@
         </div>
     </div>
 
-    
 
-
-
-    <script src="./products.js"></script>
-    <script src="./appj.js"></script>
-
-
+    <!--
+                <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-half-o"></i>
+                </div>
+                -->
 
 
 </body>
