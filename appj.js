@@ -1,7 +1,8 @@
 const productsEl = document.querySelector(".products");
 const productsEl1 = document.querySelector(".productsl");
-const  subtotalEl= document.querySelector(".subtotal");
-const  totalItemsInCartEl= document.querySelector(".total-items-in-cart");
+const subtotalEl= document.querySelector(".subtotal");
+const totalItemsInCartEl= document.querySelector(".total-items-in-cart");
+
 
 
 function renderProducts(){
@@ -10,6 +11,13 @@ function renderProducts(){
         <div class="col4">
                 <img src="${product.imgSrc}" >
                 <h4>${product.name}</h4>
+                <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-half-o"></i>
+                </div>
                 <span class="price"> ${product.price} </span>
                 <div class="fa fa-shopping-cart" class="add-to-cart" onclick="addToCart(${product.id})">
                 </div>
@@ -69,8 +77,6 @@ function renderSubtotal(){
 }
 
 
-
-
 function renderCartItems(){
     productsEl1.innerHTML = "";
     cart.forEach((item) => {
@@ -82,14 +88,15 @@ function renderCartItems(){
             </div>
             <div class="price">
                 <small>$</small>${item.price}
-                <button onclick="removeItemFromCart(${item.id})">Remove</button> 
+                <div class="btn" onclick="removeItemFromCart(${item.id})"> D </div>
             </div>
             <div class="units">
-            <div class="btn minus" onclick="changeNumberOfUnits('minus', ${item.id})"> - </div>
-            <div class="number">${item.numberOfUnits}</div>
-            <div class="btn plus" onclick="changeNumberOfUnits('plus', ${item.id})"> + </div>  
+                <div class="btn minus" onclick="changeNumberOfUnits('minus', ${item.id})"> - </div>
+                <div class="number">${item.numberOfUnits}</div>
+                <div class="btn plus" onclick="changeNumberOfUnits('plus', ${item.id})"> + </div>  
             </div>
         </div>
+        
         `;
 
     });
@@ -103,8 +110,8 @@ function removeItemFromCart(id){
 }
 
 
- // change number of units
- function changeNumberOfUnits(action, id){
+// change number of units
+function changeNumberOfUnits(action, id){
      cart = cart.map((item) => {
 
         let numberOfUnits = item.numberOfUnits;
@@ -129,10 +136,7 @@ function removeItemFromCart(id){
 
      });
     updateCart();
+   
 
-     
-
-
-})
-
+};
 
