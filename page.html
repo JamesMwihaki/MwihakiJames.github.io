@@ -23,15 +23,18 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="page.html">Products</a></li>
                         <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                         <li><a href="">Account</a></li>
                     </ul>
                 </nav> 
+           
+                <div id="close"  class="fa fa-shopping-cart" onclick="openCart('cat__container')" >
+                
              
-                    <a href="cart.html" i class="fa fa-shopping-cart" ></a> 
                     <div class="total-items-in-cart">
                         0 
                     </div>
+                </div>
 
                 <img src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png" class="menu-icon" onclick="menutoggle()"> 
             </div>
@@ -47,30 +50,46 @@
         <h2 class="title">Latest products</h2>
         <div class="row"> 
             <div class="col">
-                <div class="products"> <!--reader products-->   </div>
+                <div class="products">
+                     <!--reader products-->  
+                </div>
             </div>
             
         </div>  
     </div>
 
-    <div class="cart__container">
-        <h1>Shopping Cart</h1>
+    <div  class="cat__container">
+        <div id="cat__container" style="background: white"
+        id="cat__container" style="visibility: visible"> 
+
+   
+
+        <div id="close" onclick="closeCart('cat__container')"> 
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/delete-sign.png"> 
+            </div>
+        <h1 >Shopping Cart</h1>
         <div class="cart">
             <div class="cart-header">
                 <div class="column1">Item</div>
                 <div class="column2">Unit price</div>
                 <div class="column3">Units</div>
+
+                
+        </div>
          </div>
             <div class="shopping__cart">
-                <div class="productsl"></div>
-                    <!--reader products-->    
+                <div class="productsl">
+                    <!--Cart items-->   
+                </div>  
+               
             </div>
             <div class="cart-footer">
-                <div class="subtotal"></div>
-                <div class="checkout">
-                    Proceed to checkout
+                <div class="subtotal">
+                    0
                 </div>
-            </div>
+                <div class="btn" class="checkout">
+                Proceed to checkout
+            </div>  
 
                 <!--render cart items
                 
@@ -90,9 +109,10 @@
             -->
                 
         </div>
+        </div>
+        </div>
 
     </div>
-
 
 
 
@@ -203,6 +223,7 @@
 
     <script src="./products.js"></script>
     <script src="./appj.js"></script>
+    <script src="./app.js"></script>
  
 </body>
 </html>
